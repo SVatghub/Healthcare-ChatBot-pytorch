@@ -19,7 +19,11 @@
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
       "responses": [
         "See you later, thanks for visiting",
         "Have a nice day",
@@ -28,56 +32,180 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "appointment",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "Can I schedule an appointment?",
+        "How can I book an appointment?",
+        "Do you have any available time slots?",
+        "When can I come in for a consultation?",
+        "Is it possible to see a doctor?",
+        "I would like to schedule a visit."
+      ],
+      "responses": []
+    },
+    {
+      "tag": "profile",
+      "patterns": [
+        "Can you show my profile?",
+        "Where can I see my profile?",
+        "I want to view my profile",
+        "Display my profile",
+        "What information does my profile contain?",
+        "How do I access my profile?",
+        "Accessing my profile",
+        "Profile details",
+        "Profile visibility",
+        "Checking my profile"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "scheduled_appointments",
+      "patterns": [
+        "Show my scheduled appointments",
+        "View my appointments",
+        "Display my upcoming appointments"
+      ],
+      "responses": []
+    },
+    {
+      "tag": "general practitioner",
+      "patterns": [
+        "I have a headache",
+        "My head hurts",
+        "I'm feeling dizzy",
+        "I'm lightheaded",
+        "My vision is blurry"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "You should see a general practitioner."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "urgent care doctor",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "I'm having trouble breathing",
+        "I'm wheezing",
+        "I'm coughing up blood",
+        "My chest hurts",
+        "I'm short of breath"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "You should go to an urgent care doctor."
       ]
     },
     {
-      "tag": "funny",
+      "tag": "dermatologist",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "I have a rash",
+        "My skin is red and itchy",
+        "I have bumps on my skin",
+        "My skin is peeling"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "You should see a dermatologist."
+      ]
+    },
+    {
+      "tag": "cardiologist",
+      "patterns": [
+        "I have pain in my chest",
+        "I'm having chest pains",
+        "My heart is racing",
+        "I'm feeling faint"
+      ],
+      "responses": [
+        "You should see a cardiologist."
+      ]
+    },
+    {
+      "tag": "urologist",
+      "patterns": [
+        "I'm having trouble urinating",
+        "I'm in pain when I urinate",
+        "My urine is bloody",
+        "My urine is cloudy"
+      ],
+      "responses": [
+        "You should see a urologist."
+      ]
+    },
+    {
+      "tag": "gastroenterologist",
+      "patterns": [
+        "I'm having pain in my stomach",
+        "I'm feeling nauseous",
+        "I'm vomiting",
+        "I'm having diarrhea"
+      ],
+      "responses": [
+        "You should see a gastroenterologist."
+      ]
+    },
+    {
+      "tag": "rheumatologist",
+      "patterns": [
+        "I'm having pain in my joints",
+        "My joints are swollen",
+        "I'm having trouble moving my joints"
+      ],
+      "responses": [
+        "You should see a rheumatologist."
+      ]
+    },
+    {
+      "tag": "change_password",
+      "patterns": [
+        "I want to change my password",
+        "I need to change my password",
+        "I want to update my password",
+        "Can you help me change my password?"
+      ],
+      "responses": [
+        "Sure, I can help you change your password. What is your current password?",
+        "What would you like your new password to be?",
+        "Please confirm your new password."
+      ]
+    },
+    {
+      "tag": "change_address",
+      "patterns": [
+        "I want to change my address",
+        "I need to change my address",
+        "I want to update my address",
+        "Can you help me change my address?"
+      ],
+      "responses": [
+        "Sure, I can help you change your address. What is your current address?",
+        "What would you like your new address to be?",
+        "Please confirm your new address."
+      ]
+    },
+    {
+      "tag": "update_contact_number",
+      "patterns": [
+        "I want to update my contact number",
+        "I need to update my contact number",
+        "I want to change my contact number",
+        "Can you help me update my contact number?"
+      ],
+      "responses": [
+        "Sure, I can help you update your contact number. What is your current contact number?",
+        "What would you like your new contact number to be?",
+        "Please confirm your new contact number."
       ]
     }
   ]
