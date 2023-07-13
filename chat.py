@@ -4,6 +4,7 @@ import json
 import torch
 
 from model import NeuralNet
+
 from nltk_utils import bag_of_words, tokenize
 
 from intro import startconv
@@ -41,20 +42,26 @@ healthdata = {
     "name": None,
     "date_of_birth": None,
     "address": None,
-    "contact_no" :None,
+    "contact_no":None,
     "Insurance_provider":None,
     "Insurance_num":None,
-    "email" : None,
-    "pass" : None,
-    "MRN" : None
+    "email": None,
+    "pass": None,
+    "MRN": None
 }
 
 # for getting some vital information
-flag = True
-flag = startconv(healthdata=healthdata,flag=flag)
-
 commands = ["Book an Appointment","Show Profile","Show my Schedules Appointments","Ask Questions Related to your Symtoms","Edit Account Details"]
 editing_tags = ["change_password","change_address","update_contact_number"]
+
+flag = True
+def getresponse(msg):
+    intro_greet()
+    flag = True
+    flag = startconv(healthdata=healthdata, flag=flag)
+
+def intro_greet():
+    return "Hi there! You need to Login/Register. \n Type login or register accordingly"
 
 if flag == True:
     mrn_num = healthdata["MRN"]

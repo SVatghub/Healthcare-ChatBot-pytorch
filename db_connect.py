@@ -1,11 +1,12 @@
+# pylint: disable=import-error
 import mysql.connector
 
 def establish_con():
     cnx = mysql.connector.connect(
         host="localhost",
-        user="your_sql_username",
-        password="Your_sql_password",
-        database="Your_Database_name"
+        user="root",
+        password="Nit@1234",
+        database="mydata"
     )
     return cnx
 
@@ -91,7 +92,9 @@ def find_person_by_item(table_name, item_name, item_value):
     cnx.close()
 
     # Return true if user found and false if not found
-    return row
+    if row is not None:
+        return True
+    return False
 
 def search_login_credentials(email, password):
     # Establish a connection to the MySQL database
@@ -113,7 +116,9 @@ def search_login_credentials(email, password):
     cursor.close()
     cnx.close()
 
-    return row
+    if row is not None:
+        return True
+    return False
 
 def search_email_from_healthdata(email):
     # Establish a connection to the MySQL database

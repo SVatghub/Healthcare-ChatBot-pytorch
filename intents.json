@@ -207,6 +207,21 @@
         "What would you like your new contact number to be?",
         "Please confirm your new contact number."
       ]
-    }
+    },
+    {
+  "tag": "login",
+  "patterns": [
+    "Login"
+  ],
+  "responses": []
+},
+{
+  "tag": "register",
+  "patterns": [
+    "Register"
+  ],
+  "responses": []
+}
+
   ]
 }
