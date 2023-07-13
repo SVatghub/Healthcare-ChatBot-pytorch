@@ -3,9 +3,9 @@ import mysql.connector
 def establish_con():
     cnx = mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="Nit@1234",
-        database="mydata"
+        user="your_sql_username",
+        password="Your_sql_password",
+        database="Your_Database_name"
     )
     return cnx
 
