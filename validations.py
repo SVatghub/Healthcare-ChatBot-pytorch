@@ -12,15 +12,18 @@ def validate_name(name):
 
 from datetime import datetime, date
 
+from dateutil import parser
+
 def validate_dob(dob):
     try:
-        dob_date = datetime.strptime(dob, "%d-%m-%Y").date()
-        if dob_date.year > 1924 and dob_date < date.today():
+        dob_date = parser.parse(dob).date()
+        if dob_date.year > 1950 and dob_date < date.today():
             return True
         else:
             return False
     except ValueError:
         return False
+
 
 def validate_contact_num(contact_number):
     while True:
@@ -41,7 +44,7 @@ def validate_insurance_number(insurance_number):
 
 def validate_appointment_date(date):
     try:
-        appointment_date = datetime.strptime(date, "%d-%m-%Y")
+        appointment_date = datetime.strptime(date, "%d %B %Y")
         if appointment_date >= datetime.now() and appointment_date <= datetime.now() + timedelta(days=30):
             return True
         else:

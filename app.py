@@ -14,12 +14,13 @@ class ChatApplication:
     def __init__(self):
         self.window = Tk()
         self._setup_main_window()
+        self.window.bind("<Escape>",self._close_application)
 
     def run(self):
         self.window.mainloop()
 
     def _setup_main_window(self):
-        self.window.title("Chat")
+        self.window.title("City Hospital Chatbot")
         self.window.resizable(width=False, height=False)
         self.window.configure(width=470, height=550, bg=BG_COLOR)
 
@@ -39,7 +40,7 @@ class ChatApplication:
         self.text_widget.configure(cursor="arrow", state=DISABLED)
 
         #initial message
-        initial_message = "Sam: Hi there! You need to Login/Register.\n         Type login or register accordingly \n"
+        initial_message = "Sam: Good day! Welcome to City Hospital. \n         You are required to login or register to proceed..\n         Please enter 'login' or 'register' accordingly. \n"
         self.text_widget.configure(state=NORMAL)
         self.text_widget.insert(END, initial_message)
         self.text_widget.configure(state=DISABLED)
@@ -85,6 +86,8 @@ class ChatApplication:
 
         self.text_widget.see(END)
 
+    def _close_application(self,event):
+        self.window.destroy()
 
 if __name__ == "__main__":
     app = ChatApplication()
