@@ -92,9 +92,7 @@ def find_person_by_item(table_name, item_name, item_value):
     cnx.close()
 
     # Return true if user found and false if not found
-    if row is not None:
-        return True
-    return False
+    return row
 
 def search_login_credentials(email, password):
     # Establish a connection to the MySQL database
@@ -116,9 +114,7 @@ def search_login_credentials(email, password):
     cursor.close()
     cnx.close()
 
-    if row is not None:
-        return True
-    return False
+    return row
 
 def search_email_from_healthdata(email):
     # Establish a connection to the MySQL database

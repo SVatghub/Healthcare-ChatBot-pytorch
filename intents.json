@@ -76,8 +76,7 @@
       "tag": "scheduled_appointments",
       "patterns": [
         "Show my scheduled appointments",
-        "View my scheduled appointments",
-        "can i see my scheduled appointments",
+        "View my appointments",
         "Display my upcoming appointments"
       ],
       "responses": []
@@ -92,7 +91,7 @@
         "My vision is blurry"
       ],
       "responses": [
-        "You should schedule an appointment with a general practitioner.\n         They can provide comprehensive primary care, address your \n         concerns, and guide you towards maintaining overall health.\n         Do you want to book an appointment."
+        "You should see a general practitioner."
       ]
     },
     {
@@ -105,7 +104,7 @@
         "I'm short of breath"
       ],
       "responses": [
-        "For urgent medical needs, it's recommended to visit an \n         urgent care doctor or the nearest emergency department.\n         They can promptly address your symptoms and provide \n         the necessary care.\n         Do you want to book an appointment."
+        "You should go to an urgent care doctor."
       ]
     },
     {
@@ -117,7 +116,7 @@
         "My skin is peeling"
       ],
       "responses": [
-        "It would be beneficial to schedule an appointment with \n         a dermatologist. They can assess your skin condition, provide \n         a diagnosis, and recommend appropriate treatment options.\n         Do you want to book an appointment."
+        "You should see a dermatologist."
       ]
     },
     {
@@ -129,7 +128,7 @@
         "I'm feeling faint"
       ],
       "responses": [
-        "It's important to see a cardiologist. These symptoms could \n         be related to heart-related issues, and a specialist can provide\n         a proper evaluation and guidance.\n         Do you want to book an appointment."
+        "You should see a cardiologist."
       ]
     },
     {
@@ -141,7 +140,7 @@
         "My urine is cloudy"
       ],
       "responses": [
-        "You may need to consult a urologist. These symptoms could \n         indicate a urinary tract or kidney problem that requires further \n         evaluation.Do you want to book an appointment."
+        "You should see a urologist."
       ]
     },
     {
@@ -153,7 +152,7 @@
         "I'm having diarrhea"
       ],
       "responses": [
-        "You should see a gastroenterologist. These symptoms could \n         indicate a digestive disorder or gastrointestinal issue, and it is \n         advisable to consult a gastroenterologist for a thorough \n         evaluation and appropriate treatment.\n         Do you want to book an appointment."
+        "You should see a gastroenterologist."
       ]
     },
     {
@@ -164,7 +163,7 @@
         "I'm having trouble moving my joints"
       ],
       "responses": [
-        "It is recommended to see a rheumatologist. These symptoms \n         may be related to rheumatic conditions or autoimmune \n         disorders that require specialized care and treatment.\n         Do you want to book an appointment."
+        "You should see a rheumatologist."
       ]
     },
     {
@@ -208,121 +207,6 @@
         "What would you like your new contact number to be?",
         "Please confirm your new contact number."
       ]
-    },
-    {
-  "tag": "login",
-  "patterns": [
-    "Login"
-  ],
-  "responses": []
-},
-{
-  "tag": "register",
-  "patterns": [
-    "Register"
-  ],
-  "responses": []
-}, {
-  "tag": "update_gender",
-  "patterns": [
-    "I want to change my gender",
-    "I need to change my gender",
-    "I want to update my gender",
-    "Can you help me change my gender?"
-  ],
-  "responses": [
-    "Sure, I can help you change your gender. What is your current gender?",
-    "What would you like your new gender to be?",
-    "Please confirm your new gender."
-  ]
-},{
-  "tag": "update_dob",
-  "patterns": [
-    "I want to change my date of birth",
-    "I need to change my date of birth",
-    "I want to update my date of birth",
-    "Can you help me change my date of birth?"
-  ],
-  "responses": [
-    "Sure, I can help you change your date of birth. What is your current date of birth?",
-    "What would you like your new date of birth to be?",
-    "Please confirm your new date of birth."
-  ]
-}
-,{
-  "tag": "update_email",
-  "patterns": [
-    "need to change my email",
-    "how can i change my email",
-    "can email be changed",
-    "I want to change my email",
-    "I need to change my email",
-    "I want to update my email",
-    "Can you help me change my email?"
-  ],
-  "responses": [
-    "Sure, I can help you change your email. What is your current email?",
-    "What would you like your new email to be?",
-    "Please confirm your new email."
-  ]
-}
-,{
-  "tag": "update_name",
-  "patterns": [
-    "I want to change my name",
-    "I need to change my name",
-    "I want to update my name",
-    "Can you help me change my name?"
-  ],
-  "responses": [
-    "Sure, I can help you change your name. What is your current name?",
-    "What would you like your new name to be?",
-    "Please confirm your new name."
-  ]
-}
-,{
-  "tag": "update_insurance_num",
-  "patterns": [
-    "change my insurance number",
-    "can i change my insurance number",
-    "I want to change my insurance number",
-    "I need to change my insurance number",
-    "I want to update my insurance number",
-    "Can you help me change my insurance number?"
-  ],
-  "responses": [
-    "Sure, I can help you change your insurance number. What is your current insurance number?",
-    "What would you like your new insurance number to be?",
-    "Please confirm your new insurance number."
-  ]
-}
-,{
-  "tag": "update_insurance_provider",
-  "patterns": [
-    "can you update my insurance provider",
-    "wanted to changed insurance provider",
-    "I want to change my insurance provider",
-    "I need to change my insurance provider",
-    "I want to update my insurance provider",
-    "Can you help me change my insurance provider?"
-  ],
-  "responses": [
-    "Sure, I can help you change your insurance provider. What is your current insurance provider?",
-    "What would you like your new insurance provider to be?",
-    "Please confirm your new insurance provider."
-  ]
-},
-    {
-  "tag": "probable_diagnosis",
-  "patterns": [
-    "Give me probable diagnosis",
-    "Can you provide a probable diagnosis based on my symptoms?",
-    "I'm experiencing these symptoms, what might be the cause?"
-  ],
-  "responses": [
-    "It's essential to consult a healthcare professional for an accurate diagnosis. Based on your symptoms, it could indicate various conditions. Only a qualified medical practitioner can provide a thorough evaluation and give you a probable diagnosis."
-  ]
-}
-
+    }
   ]
 }

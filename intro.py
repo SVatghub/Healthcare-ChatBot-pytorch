@@ -3,7 +3,10 @@ import random
 from validations import validate_name, validate_dob,validate_contact_num,validate_insurance_number,validate_email
 from db_connect import write_dictionary_to_table,find_person_by_item,search_login_credentials,search_email_from_healthdata
 bot_name = "Sam"
+
 def startconv(healthdata,flag):
+    print(f"{bot_name}: Hi there! You need to Login/Register.")
+    print(f"{bot_name}: Type login or register accordingly")
     login_register_prompt = input("You: ")
     if(login_register_prompt.lower() == "login"):
         row = login(flag=flag)
@@ -23,7 +26,7 @@ def register(healthdata,flag):
     user_email = input("You: ")
     flag = endconv(user_email,flag=flag)
     if flag != False:
-        # 2) Asking for email address password!
+        # 2) Asking for email address password! 
         user_email = validate_email(user_email)
         user_found = search_email_from_healthdata(user_email)
         if user_found is None:
